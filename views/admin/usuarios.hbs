@@ -1,0 +1,17 @@
+<main role="main" class="container">
+    {{#if errors}}
+        <div class="alert alert-danger">
+            {{error}}
+        </div>
+    {{/if}}
+    <div class="starter-template">
+        <h1>Lista de usuarios registrados</h1>
+        <ul class="list-group list-group-flush">
+            {{#each users}}
+                <li class="list-group-item">
+                    {{name}} : {{email}} 
+                </li>
+            {{/each}}
+        </ul>
+  </div>
+</main>
